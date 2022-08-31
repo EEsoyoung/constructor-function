@@ -18,10 +18,40 @@ randomData.forEach((item)=>{
 const inputData = answer.slice(0,3);
 console.log(inputData);
 
-function average (arr){
-  const result = arr.reduce((sum,item)=>{
-    (sum + item) /arr.length;
-    return result;
-  });
-};
-average(inputData)
+// let result = 0;
+// inputData.forEach((num)=>{
+//   result +=num;
+// });
+// console.log(result)
+
+const result = inputData.reduce((prev,cur)=>{
+  return prev + cur;
+})
+console.log(result)
+
+if (result < 10){
+  console.log('under');
+} else if (result >= 10){
+  console.log('over');
+} else {
+  console.log('none');
+}
+
+function obj(num1,num2,num3){
+  this.first = num1,
+  this.second = num2,
+  this.third = num3
+}
+
+const objectData = new obj(inputData[0],inputData[1],inputData[2]);
+console.log(objectData)
+
+// const objectData = Object.assign({},inputData);
+// console.log(objectData)
+
+
+
+
+
+
+
