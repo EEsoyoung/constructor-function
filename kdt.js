@@ -9,7 +9,7 @@
       this.tel = tel;
     }
 }
-const soyoungLee = new soyoung('이소영',20,"대전", 01012345678 );
+const soyoungLee = new soyoung("이소영", 20, "대전", 0101234567 );
 console.log(soyoungLee);
 
 // function kdt (name ,glass,paymant){
