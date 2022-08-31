@@ -18,4 +18,10 @@ randomData.forEach((item)=>{
 const inputData = answer.slice(0,3);
 console.log(inputData);
 
-console.log(inputData[1])
+function average (arr){
+  const result = arr.reduce((sum,item)=>{
+    (sum + item) /arr.length;
+    return result;
+  });
+};
+average(inputData)
