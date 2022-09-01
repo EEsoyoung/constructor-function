@@ -9,14 +9,15 @@ function list (id,name){
 // const student = new list(1,'이소영');
 // console.log(student)
 
-for(let i = 0; i < studentList.length; i++){
-  const student = new list(i+1,studentList[i])
-  console.log(student);
-};
-
-
-// studentList.forEach((name,id)=>{
-//   const student = new list (id+1,name)
+// for(let i = 0; i < studentList.length; i++){
+//   const student = new list(i+1,studentList[i])
 //   console.log(student);
-//   listObject.push()
-// });
+// };
+
+
+
+studentList.forEach((name,id)=>{
+  const student = new list (id+1,name)
+  console.log(student);
+  // listObject.push()
+});

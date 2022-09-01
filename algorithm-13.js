@@ -25,7 +25,7 @@ console.log(inputData);
 // console.log(result)
 
 const result = inputData.reduce((prev,cur)=>{
-  return prev + cur;
+  return prev + cur/inputData.length;
 })
 console.log(result)
 
@@ -33,8 +33,6 @@ if (result < 10){
   console.log('under');
 } else if (result >= 10){
   console.log('over');
-} else {
-  console.log('none');
 }
 
 function obj(num1,num2,num3){
@@ -48,6 +46,7 @@ console.log(objectData)
 
 // const objectData = Object.assign({},inputData);
 // console.log(objectData)
+
 
 
 
